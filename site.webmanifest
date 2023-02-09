@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "UmForum Anniversary game",
+    "short_name": "UmForum",
+    "start_url": "https://umforum5years.github.io/",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +14,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#000",
+    "background_color": "#000",
     "display": "standalone"
 }
