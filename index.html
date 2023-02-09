@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>UmForum 5 лет!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>UmForum 5 лет!</h1>
+        </header>
+
+        <section class="score-panel">
+            <ul class="stars">
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+            </ul>
+
+            <span class="moves">0</span>
+            <span class="moves-label">Ходов</span>
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+                <i class="fa fa-repeat"></i>
+            </div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="alex">
+                <img src="img/alex1.jpg" alt="">
+            </li>
+            <li class="card" type="artem">
+                <img src="img/artem1.jpg" alt="">
+            </li>
+            <li class="card match" type="girls">
+                <img src="img/girls1.jpg" alt="">
+            </li>
+            <li class="card" type="ilya">
+                <img src="img/ilya1.jpg" alt="">
+            </li>
+            <li class="card" type="kate">
+                <img src="img/kate1.jpg" alt="">
+            </li>
+            <li class="card match" type="kiselev">
+                <img src="img/kiselev1.jpg" alt="">
+            </li>
+            <li class="card" type="tanya">
+                <img src="img/tanya1.jpg" alt="">
+            </li>
+            <li class="card" type="tommy">
+                <img src="img/tommy1.jpg" alt="">
+            </li>
+            <li class="card" type="alex">
+                <img src="img/alex2.jpg" alt="">
+            </li>
+            <li class="card" type="artem">
+                <img src="img/artem2.jpg" alt="">
+            </li>
+            <li class="card match" type="girls">
+                <img src="img/girls2.jpg" alt="">
+            </li>
+            <li class="card" type="ilya">
+                <img src="img/ilya2.jpg" alt="">
+            </li>
+            <li class="card" type="kate">
+                <img src="img/kate2.jpg" alt="">
+            </li>
+            <li class="card match" type="kiselev">
+                <img src="img/kiselev2.jpg" alt="">
+            </li>
+            <li class="card" type="tanya">
+                <img src="img/tanya2.jpg" alt="">
+            </li>
+            <li class="card" type="tommy">
+                <img src="img/tommy2.jpg" alt="">
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Поздравляем! 🎉</h2>
+                <a class="close" href=#>×</a>
+                <div class="content-1">
+                    Вы победитель безUmной игры 🎉
+                </div>
+                <div class="content-2">
+                    <p>Сделали <span id=finalMove> </span> ходов
+                        за <span id=totalTime> </span></p>
+                    <p>Место в турнирной таблице: <span id=starRating></span></p>
+                </div>
+                <div class="image-win-container">
+                    <img class="image-win" src="./img/5years.jpg" />
+                </div>
+                <button id="play-again" onclick="playAgain()">
+                    Сыграем еще? 😄</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
