@@ -199,16 +199,29 @@ function startTimer(){
     },1000);
 }
 
+var pyroTimer = function(){
+    var pyroCounter = 5;
+    pyro.classList.add("show");
+    var pyroTimer = setInterval(function(){
+            if(pyroCounter <= 0){
+                pyro.classList.remove("show");
+                clearInterval(pyroTimer);
+            }else{
+                pyroCounter = pyroCounter - 1;
+                console.log(pyroCounter);
+            }
+        }, 1000);
+    }
 
 // @description congratulations when all cards match, show modal and moves, time and rating
 function congratulations(){
     if (matchedCard.length == 16){
         clearInterval(interval);
+        pyroTimer();
         finalTime = timer.innerHTML;
 
         // show congratulations modal
         modal.classList.add("show");
-        pyro.classList.add("show");
 
         // declare star rating variable
         var starRating = document.querySelector(".stars").innerHTML;
@@ -227,7 +240,6 @@ function congratulations(){
 function closeModal(){
     closeicon.addEventListener("click", function(e){
         modal.classList.remove("show");
-        pyro.classList.remove("show");
         startGame();
     });
 }
@@ -236,7 +248,6 @@ function closeModal(){
 // @desciption for user to play Again
 function playAgain(){
     modal.classList.remove("show");
-    pyro.classList.remove("show");
     startGame();
 }
 

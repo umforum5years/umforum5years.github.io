@@ -243,6 +243,7 @@ i.fa {
 .popup .content-1,
 .content-2 {
 	/* max-height: 25%; */
+	height: auto;
 	overflow: auto;
 	text-align: center;
 }
