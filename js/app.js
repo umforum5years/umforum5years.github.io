@@ -23,6 +23,7 @@ let matchedCard = document.getElementsByClassName("match");
 
  // declare modal
  let modal = document.getElementById("popup1")
+ let pyro = document.getElementById("pyro")
 
  // array for opened cards
 var openedCards = [];
@@ -207,6 +208,7 @@ function congratulations(){
 
         // show congratulations modal
         modal.classList.add("show");
+        pyro.classList.add("show");
 
         // declare star rating variable
         var starRating = document.querySelector(".stars").innerHTML;
@@ -225,6 +227,7 @@ function congratulations(){
 function closeModal(){
     closeicon.addEventListener("click", function(e){
         modal.classList.remove("show");
+        pyro.classList.remove("show");
         startGame();
     });
 }
@@ -233,6 +236,7 @@ function closeModal(){
 // @desciption for user to play Again
 function playAgain(){
     modal.classList.remove("show");
+    pyro.classList.remove("show");
     startGame();
 }
 
