@@ -263,6 +263,8 @@ i.fa {
 .popup .content-1,
 .content-2 p {
 	line-height: 1;
+	height: auto;
+	overflow: hidden;
 }
 
 .image-win-container {
